@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medal Counts by Sport</title>
+    <link rel="stylesheet" href="css/medal_count.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Medal Counts by Sport</h1>
+        <div class="topnav" id="topnavbar">
+            <a class="btn active" href="index.html">Main</a>
+            <a class="btn" href="histogram.html">Histogram</a>
+            <a class="btn" href="noc_participation_chart.html">LineGraph</a>
+            <a class="btn" href="medal_count.html">Bar Graph</a>
+            <a class="btn" href="PieChart.html">PieChart</a>
+        </div>
+        <div class="filters">
+            <div class="filter">
+                <label for="noc">Select Country:</label>
+                <select id="noc"></select>
+            </div>
+            <div class="filter">
+                <label for="year">Select Year:</label>
+                <select id="year"></select>
+            </div>
+        </div>
+    </header>
+    <div id="chart-container">
+        <div id="chart"></div>
+        <div class="description">
+            <p>The bar chart illustrates medal counts across different sports, categorizing them into gold, silver, and bronze sections. Users have the flexibility to select various countries and sports from dropdown menus, enabling detailed comparisons and analyses.</p>
+        </div>
+    </div>
+    
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="js/medal_count.js"></script>
+</body>
+</html>

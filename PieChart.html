@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive meta tag -->
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.js"></script>
+    <script src="js/pie_chart.js" defer></script>
+    <script src="js/script_pie.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Olympic Medal Trends – Pie Chart Visualization</h1>
+    </div>
+
+    <div class="topnav" id="topnavbar">
+        <a class="btn active" href="index.html">Main</a>
+        <a class="btn" href="histogram.html">Histogram</a>
+        <a class="btn" href="noc_participation_chart.html">LineGraph</a>
+        <a class="btn" href="medal_count.html">Bar Graph</a>
+        <a class="btn" href="PieChart.html">PieChart</a>
+    </div>
+
+    <div class="wrapper">
+        <svg id="chart" width="800" height="800"></svg> <!-- Adjusted for pie chart -->
+        <div id="yearSlider">
+            <input type="range" class="slider" id="yearRange" min="1980" max="2016" step="4" value="2016">
+        </div>
+        <div class="description">
+            <h1>Olympic Medal Distribution by Country</h1>
+        </div>
+        
+    </div>
+</body>
+</html>

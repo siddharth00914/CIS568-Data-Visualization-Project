@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Age Histogram</title>
+    <link rel="stylesheet" href="css/histogofatheletes.css">
+</head>
+<body>
+    <h1>Athlete Age Distribution</h1>
+    <div class="topnav" id="topnavbar">
+        <a class="btn active" href="index.html">Main</a>
+        <a class="btn" href="histogram.html">Histogram</a>
+        <a class="btn" href="noc_participation_chart.html">LineGraph</a>
+        <a class="btn" href="medal_count.html">Bar Graph</a>
+        <a class="btn" href="PieChart.html">PieChart</a>
+    </div>
+    <p>Please select a country and sport to view the age distribution of athletes.</p>
+    <div id="filters">
+        <label for="noc-filter">Country (NOC):</label>
+        <select id="noc-filter"></select>
+
+        <label for="sport-filter">Sport:</label>
+        <select id="sport-filter"></select>
+    </div>
+    <div id="chart-container">
+        <div id="chart"></div>
+    </div>
+    
+    <!-- Description about the histogram -->
+    <p>The histogram shows the age distribution of athletes, with bars representing different age groups. Users can refine the data displayed by selecting specific countries and sports through dropdown menus, allowing for targeted analysis of age demographics within the athletic community.</p>
+    
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="js/histofathelete.js"></script>
+</body>
+</html>

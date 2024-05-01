@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOC Gender Participation Over Years</title>
+    <link rel="stylesheet" href="css/gender.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h1>Gender Participation Over Years by Country</h1>
+    <div class="topnav" id="topnavbar">
+        <a class="btn active" href="index.html">Main</a>
+        <a class="btn" href="histogram.html">Histogram</a>
+        <a class="btn" href="noc_participation_chart.html">LineGraph</a>
+        <a class="btn" href="medal_count.html">Bar Graph</a>
+        <a class="btn" href="PieChart.html">PieChart</a>
+    </div>
+    <div class="selector">
+        <label for="countrySelect">Select the Country:</label>
+        <select id="countrySelect"></select>
+    </div>
+
+    <div id="chart-container">
+        <div id="chart"></div>
+        <div class="description">
+            <p>The line graph displays gender participation over the years for a selected country, showing trends in male and female participation in sports. Users can filter the data by choosing different countries from a dropdown menu, which allows for detailed comparisons and insights into gender dynamics in sports across various nations.</p>
+        </div>
+    </div>
+    <script src="js/script_noc.js"></script>
+</body>
+</html>

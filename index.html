@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.js"></script>
+    <script src="js/tree.js" async></script>
+    <script src="js/table.js" async></script>
+    <script src="js/gap_plot.js" async></script>
+    <script src="js/script.js" async></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Olympic Medal Trends</h1>
+    </div>
+    <div class="topnav" id="topnavbar">
+        <a class="btn active" href="index.html">Main</a>
+        <a class="btn" href="histogram.html">Histogram</a>
+        <a class="btn" href="noc_participation_chart.html">LineGraph</a>
+        <a class="btn" href="medal_count.html">Bar Graph</a>
+        <a class="btn" href="PieChart.html">PieChart</a>
+    </div>
+    <div class="wrapper">
+        <div id="scatter-plot" class="view" style="width:900px">
+            <p>This scatter plot illustrates the distribution and trends of Olympic medals over time, highlighting differences in performance across different nations and Olympic games.</p>
+        </div>
+        <div class="innerWrapper">
+            <table id="matchTable">
+                <thead>
+                    <tr>
+                        <th class="Team">Team</th>
+                        <td class="Gold">Gold</td>
+                        <td class="Silver">Silver</td>
+                        <td class="Bronze">Bronze</td>
+                        <td class="Total">Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <p>The medal tally table provides a detailed view of medals won by each team, categorized by Gold, Silver, Bronze, and their respective totals.</p>
+        </div>
+    </div>
+</body>
+</html>
